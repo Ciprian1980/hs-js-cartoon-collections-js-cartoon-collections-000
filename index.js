@@ -17,14 +17,15 @@ function summonCaptainPlanet(planeteerCalls){
   return linePlaneteers;
 }
 
-
-
-
 function longPlaneteerCalls(words) {
-  var arrayCalls = [];
- //for (let i=0, i> words.length, i++){
- 
+  var hasLongWords = false;
+ for (let i=0; i< words.length; i++){
+  if (words[i].length > 4){
+   hasLongWords = true;
+  }
+  return hasLongWords;
 }
 
-function findTheCheese (foods) {
+//function findTheCheese(foods) {
+  
 }

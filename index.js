@@ -1,5 +1,5 @@
 function dwarfRollCall(dwarves) {
-  var lineDwarves;
+  var lineDwarves = "";
   for ( let d = 0;  d < dwarves.length; d++){
   
   lineDwarves += (d+1) .toString() + ". "  +  dwarves[d] + " ";

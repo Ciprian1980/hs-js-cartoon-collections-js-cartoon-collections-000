@@ -1,10 +1,8 @@
 function dwarfRollCall(dwarves) {
-  
   var lineDwarves = "";
   for ( let d = 0;  d < dwarves.length; d++){
   
   lineDwarves += (d+1) .toString() +  ". "  + dwarves[d] + " ";
-
   }
   return lineDwarves;
 }
@@ -24,8 +22,8 @@ function summonCaptainPlanet(planeteerCalls){
 
 function longPlaneteerCalls(words) {
   var arrayCalls = [];
- // if ( words > 4 )
-  
+ //for (let i=0, i> words.length, i++){
+ 
 }
 
 function findTheCheese (foods) {

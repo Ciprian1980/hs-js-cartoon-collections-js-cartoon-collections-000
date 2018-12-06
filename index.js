@@ -11,7 +11,7 @@ function summonCaptainPlanet(planeteerCalls){
   var linePlaneteers = [ ];
   
   for ( let p = 0; p < planeteerCalls.length; p++){
-    linePlaneteers.push(planeteerCalls.toUpperCase(p) + "!");
+    linePlaneteers.push(planeteerCalls[p].toUpperCase() + "!");
   }
   return linePlaneteers;
 }

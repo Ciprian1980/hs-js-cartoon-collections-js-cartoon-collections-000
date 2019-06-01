@@ -16,12 +16,10 @@ function summonCaptainPlanet(array){
 }
 
 function longPlaneteerCalls(arrayOfCalls){
-  let longPlaneteerCalls = [];
-  for(let i = 0; i < arrayOfCalls.length; i++){
-    if(arrayOfCalls[i].length <= 4){
-      return true;
-    }
-    else
-      return false;
-  }
+  let longPlaneteerCalls = false;
+  for(let i = 0; i <= arrayOfCalls.length; i++){
+    if(longPlaneteerCalls === true && arrayOfCalls[i].length > 4){
+      }
+   }
+  return longPlaneteerCalls;
 }

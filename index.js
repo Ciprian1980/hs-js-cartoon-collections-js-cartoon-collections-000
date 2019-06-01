@@ -1,43 +1,27 @@
-function dwarfRollCall(dwarves) {
-  var lineDwarves = "";
-  for ( let i = 0;  i < dwarves.length; i++){
-  
-  lineDwarves += (i+1) .toString() +  ". "  + dwarves[i] + " ";
+function dwarfRollCall(array){
+  let dwarfes = "";
+  for(let i = 0; i < array.length; i++){
+    dwarfes += (i + 1 + ". " +  array[i] + " ");
   }
-  return lineDwarves;
+  return dwarfes;
+//'1. Dopey 2. Grumpy 3. Bashful '
 }
 
-function summonCaptainPlanet(planeteerCalls){
-  var linePlaneteers = [ ];
-  
-  for ( let i = 0; i < planeteerCalls.length; i++){
-
-    linePlaneteers.push(planeteerCalls[i].toUpperCase() + "!");
+function summonCaptainPlanet(array){
+  let newArray = [];
+  for(let i = 0; i < array.length; i++){
+    newArray.push(array[i].toUpperCase() + "!");
   }
-  console.log(planeteerCalls)
-  return linePlaneteers;
+  return newArray;
 }
 
-function longPlaneteerCalls(words){
-  var hasLongWords = false;
- for (let i=0; i< words.length; i++){
-  if (words[i].length > 4){
-   hasLongWords = true;
+function longPlaneteerCalls(arrayOfCalls){
+  let longPlaneteerCalls = [];
+  for(let i = 0; i < arrayOfCalls.length; i++){
+    if(arrayOfCalls[i].length <= 4){
+      return true;
+    }
+    else
+      return false;
   }
-    } 
-  return hasLongWords;
 }
-
-
-function findTheCheese(foods) {
-  var cheeses = ["cheddar", "gouda", "camembert"];
-  for (var i = 0; i < foods.length; i++){
-  for(let j=0; j < cheeses.length; j++){
-   if ( cheeses[j] === foods[i] ){ 
-   return foods[i];
-   }
-  }
- }
- return 'no cheese!';
-}
-

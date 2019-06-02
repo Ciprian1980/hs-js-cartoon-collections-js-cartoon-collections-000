@@ -17,9 +17,22 @@ function summonCaptainPlanet(array){
 
 function longPlaneteerCalls(arrayOfCalls){
   let longPlaneteerCalls = false;
-  for(let i = 0; i <= arrayOfCalls.length; i++){
-    if(longPlaneteerCalls === true && arrayOfCalls[i].length > 4){
+  for(let i = 0; i < arrayOfCalls.length; i++){
+    if(arrayOfCalls[i].length > 4){
+      longPlaneteerCalls = true;
       }
    }
   return longPlaneteerCalls;
+}
+
+function findTheCheese(arrayOfStrings){
+  let cheeses = ['gouda', 'cheddar', 'camembert'];
+  for(let i = 0; i < cheeses.length; i++){
+  for(let j = 0; j < arrayOfStrings.length; j++){
+    if(arrayOfStrings[j] === cheeses[i]){
+      return arrayOfStrings[j];
+    }
+   }
+  }
+  return 'no cheese!';
 }
